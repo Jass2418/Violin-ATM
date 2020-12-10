@@ -29,7 +29,11 @@ void setup(){
 }
 
 void loop(){
-  double voltage = gaugeSensor.getVoltage();
-  Serial.println(voltage);
-  delay(1000);
+  double newtons = gaugeSensor.getForce(Unit::Newtons);
+  int leftMuscle = analogRead(LEFT_MUSCLE);
+  int rightMuscle = analogRead(RIGHT_MUSCLE);
+  String command = String(newtons) + "," +
+                   String(leftMuscle) + "," +
+                   String(rightMuscle);
+  Serial.println(command);
 }

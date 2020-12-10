@@ -11,16 +11,17 @@
 #define MinVoltageValue 0 // mV
 
 #include "Particle.h"
-// 20g -- 20K ohms
-// 50g -- 10K ohms
-// 100g -- 6.2K ohms
-// 260g -- 3.5K ohms
-// 510g -- 2.1K ohms
-// 1000g -- 1.2K ohms
-// 2000g -- 750 ohms
-// 4000g -- 450 ohms
-// 7000g -- 310 ohms
-// 10000g -- 170 ohms
+
+struct GaugeSpec{
+  int resistence;
+  int grams;
+};
+
+enum Unit{
+  Grams,
+  Kg,
+  Newtons
+};
 
 class GaugeSensor{
   public:
@@ -39,18 +40,56 @@ class GaugeSensor{
                  MinVoltageValue,MaxVoltageValue) / 1000.0;
     }
 
-    double getForce(){
+    double getForce(int unit){
       double vO = getVoltage();
       double v = MaxVoltageValue / 1000.0;
-      double rF = ((_rm * v) - (_rm * vO)) / vO;
+      int rF = (vO * _rm) / (v -vO);
+      int length = sizeof(gaugeSpecs)/sizeof(gaugeSpecs[0]);
+      for (int i = 0; i < length - 1 ; i++) {
+        int lowerRange = gaugeSpecs[i].resistence;
+        int upperRange = gaugeSpecs[i+1].resistence;
+        if(isInRange(lowerRange,upperRange,rF)){
+          double force = map(rF,lowerRange,upperRange,
+                     gaugeSpecs[i].grams,gaugeSpecs[i+1].grams) / 1.0;
+          switch (unit)
+          {
+            case Unit::Grams:
+              return force;
+            case Unit::Kg:
+              return force / 1000.0;
+            case Unit::Newtons:
+              return (force / 1000.0) * 9.80665;
+            default:
+              return force;
+          }
+        }
+      }
       return 0.0;
-
     }
 
   private:
     int _pin;
     int _rm;
-};
+    GaugeSpec gaugeSpecs[12] = {
+        {0,11000},
+        {170,10000},
+        {310,7000},
+        {450,4000},
+        {750,2000},
+        {1200,1000},
+        {2100,510},
+        {3500,260},
+        {6200,100},
+        {10000,50},
+        {20000,20},
+        {50000,0},
+    };
 
+  bool isInRange(int low, int high, int x)
+  {
+    return  ((x-low) <= (high-low));
+  }
+
+};
 
 #endif // VIOLIN_ATM_GAUGESENSOR_H
