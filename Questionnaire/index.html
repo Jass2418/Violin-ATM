@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RDC/TMD Questionnaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main-container">
+    <!--  Header   -->
+    <div class="title-container">
+        <div class="title-center">
+            <h4 class="title">
+                RDC/TMD Questionnaire
+            </h4>
+        </div>
+    </div>
+    <!--  Body   -->
+    <div class="body-container">
+        <form>
+            <!--  Personal Information  -->
+            <div class="row">
+                <div class="personal-info-title">
+                    Personal Information
+                </div>
+                <!--  Full Name  -->
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Full Name">
+                    </div>
+                </div>
+                <!--  Date  -->
+                <div class="col-sm-6">
+                    <div class="date-label">
+                        Date : 22/05/2020
+                    </div>
+                </div>
+            </div>
+            <!--  Instructions  -->
+            <div class="row">
+                <div class="instructions-label">
+                    Please read each question and respond accordingly.
+                    For each of the questions below circle only one response.
+                </div>
+            </div>
+            <!--  Questionnaire  -->
+            <!--  Question 1  -->
+            <div class="row">
+                <div class="question">
+                   1. Would you say your health in general is excellent, very good, good, fair or poor?
+                </div>
+                <div class="options">
+                    <div class="radio">
+                        <label><input type="radio" name="ans_1" value="1" checked>Excellent</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_1" value="2">Very good</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_1" value="3">Good</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_1" value="4">Fair</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_1" value="5">Poor</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 2  -->
+            <div class="row">
+                <div class="question">
+                    2. Would you say your oral health in general is excellent, very good, good, fair or poor?
+                </div>
+                <div class="options">
+                    <div class="radio">
+                        <label><input type="radio" name="ans_2" value="1" checked>Excellent</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_2" value="2">Very good</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_2" value="3">Good</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_2" value="4">Fair</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_2" value="5">Poor</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 3  -->
+            <div class="row">
+                <div class="question">
+                    3. Have you had pain in the face, jaw, temple, in front of the ear or in the ear in the past month?
+                </div>
+                <div class="options">
+                    <div class="radio">
+                        <label><input type="radio" name="ans_3" value="0" checked>No</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_3" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="condition-text">
+                [If no pain in the past month, SKIP to question 14]
+            </div>
+            <!--  Question 4.A  -->
+            <div class="row">
+                <div class="condition-question">
+                    If Yes,
+                </div>
+                <div class="question">
+                    4.a. How many years ago did your facial pain begin for the first time?
+                </div>
+                <div class="options">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="input-group">
+                            <input type="number" name="ans_4a" id="ans_4a" class="form-control" placeholder="Years" aria-label="Years" aria-describedby="4a_years">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="4a_years">Years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="condition-text">
+                [If one year ago or more SKIP to question 5] [If less than one year ago, code 00]            
+            </div>
+            <!--  Question 4.b  -->
+            <div class="row">
+                <div class="question">
+                    4.b. How many months ago did your facial pain begin for the first time?
+                </div>
+                <div class="options">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="input-group">
+                            <input type="number" name="ans_4b" id="ans_4b" class="form-control" placeholder="Months" aria-label="Months" aria-describedby="4b_months">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="4b_months">Months</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 5 -->
+            <div class="row">
+                <div class="question">
+                    5. Is your facial pain persistent, recurrent or was it only a one-time problem?
+                </div>
+                <div class="options">
+                    <div class="radio">
+                        <label><input type="radio" name="ans_5" value="1" checked>Persistent</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_5" value="2">Recurrent</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_5" value="3">One-Time</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 6 -->
+            <div class="row">
+                <div class="question">
+                    6. Have you ever gone to a physician, dentist, chiropractor or other health professional for facial ache or pain?
+                </div>
+                <div class="options">
+                    <div class="radio">
+                        <label><input type="radio" name="ans_6" value="1" checked>No</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_6" value="2">Yes, in the last six months
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ans_6" value="3">Yes, more than six months ago</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 7 -->
+            <div class="row">
+                <div class="question">
+                    7. How would you rate your facial pain on a 0 to 10 scale at the present time, that is right now, where 0 is "no pain" and 10 is "pain as bad as could be"?                </div>
+                <div class="options">
+                    <div class="range">
+                        <input type="range" class="slider" id="ans_7" min="0" max="10" value="0">
+                    </div>
+                    <div class="row range-labels">
+                        <div class="col range-label left-text">0</div>
+                        <div class="col range-label center-text">5 </div>
+                        <div class="col range-label right-text">10 </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 8 -->
+            <div class="row">
+                <div class="question">
+                    8. In the past six months, how intense was your worst pain rated on a 0 to 10 scale where 0
+                    is "no pain" and 10 is "pain as bad as could be"?
+                </div>
+                <div class="options">
+                    <div class="range">
+                        <input type="range" class="slider" id="ans_8" min="0" max="10" value="0">
+                    </div>
+                    <div class="row range-labels">
+                        <div class="col range-label left-text">0</div>
+                        <div class="col range-label center-text">5 </div>
+                        <div class="col range-label right-text">10 </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 9 -->
+            <div class="row">
+                <div class="question">
+                    9. In the past six months, on the average, how intense was your pain rated on a 0 to 10 scale
+                    where 0 is "no pain" and 10 is "pain as bad as could be"? [That is, your usual pain at times 
+                    you were experiencing pain].
+                </div>               
+                <div class="options">
+                    <div class="range">
+                        <input type="range" class="slider" id="ans_9" min="0" max="10" value="0">
+                    </div>
+                    <div class="row range-labels">
+                        <div class="col range-label left-text">0</div>
+                        <div class="col range-label center-text">5 </div>
+                        <div class="col range-label right-text">10 </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 10  -->
+            <div class="row">
+                <div class="question">
+                    10. About how many days in the last six months have you been kept from your usual activities (work, school or housework) because of facial pain?                </div>
+                <div class="options">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="input-group">
+                            <input type="number" name="ans_4a" id="ans_10" class="form-control" placeholder="Days" aria-label="Days" aria-describedby="10_days">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="10_days">Days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 11 -->
+            <div class="row">
+                <div class="question">
+                    11. In the past six months, how much has facial pain interfered with your daily activities rated
+                    on a 0 to 10 scale where 0 is "no interference" and 10 is "unable to carry on any activities"?
+                </div>
+                <div class="options">
+                    <div class="range">
+                        <input type="range" class="slider" id="ans_11" min="0" max="10" value="0">
+                    </div>
+                    <div class="row range-labels">
+                        <div class="col range-label left-text">0</div>
+                        <div class="col range-label center-text">5 </div>
+                        <div class="col range-label right-text">10 </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 12 -->
+            <div class="row">
+                <div class="question">
+                    12. In the past six months, how much has facial pain changed your ability to take part in 
+                    recreational, social and family activities where 0 is "no interference " and 10 is 
+                    "extreme change"?
+                </div>
+                <div class="options">
+                    <div class="range">
+                        <input type="range" class="slider" id="ans_12" min="0" max="10" value="0">
+                    </div>
+                    <div class="row range-labels">
+                        <div class="col range-label left-text">0</div>
+                        <div class="col range-label center-text">5 </div>
+                        <div class="col range-label right-text">10 </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 13 -->
+            <div class="row">
+                <div class="question">
+                    13. In the past six months, how much has facial pain changed your ability to work 
+                    including housework) where 0 is "no interference " and 10 is "extreme change"?
+                </div>
+                <div class="options">
+                    <div class="range">
+                        <input type="range" class="slider" id="ans_13" min="0" max="10" value="0">
+                    </div>
+                    <div class="row range-labels">
+                        <div class="col range-label left-text">0</div>
+                        <div class="col range-label center-text">5 </div>
+                        <div class="col range-label right-text">10 </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Submit Button  -->
+            <div class="submit-container">
+                <button type="submit" class="submit-button btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

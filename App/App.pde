@@ -49,18 +49,10 @@ void setup() {
   min[2] = 0;
   max[2] = 4095;    // digital input example, e.g. a button
   valColor[2] = color(0, 0, 255); // blue
-  /*
- // example for adding a 4th value:
-   values[3] = 0;
-   min[3] = 0;
-   max[3] = 400; // custom range example 
-   valColor[3] = color(255, 0, 255); // purple
-   */
   
   //the following adds columns for time. You can also add milliseconds. See the Time/Date functions for Processing: https://www.processing.org/reference/ 
   dataTable = new Table();
-  dataTable.addColumn("minute",Table.INT);
-  dataTable.addColumn("second",Table.INT);
+  dataTable.addColumn("millis",Table.INT);
   
   //the following are dummy columns for each data value. Add as many columns as you have data values. Customize the names as needed. Make sure they are in the same order as the order that Arduino is sending them!
   dataTable.addColumn("gauge",Table.FLOAT);
@@ -141,8 +133,7 @@ void serialEvent(Serial myPort) {
       values = float(splitTokens(inString, ", \t")); // delimiter can be comma space or tab
       TableRow newRow = dataTable.addRow(); //add a row for this new reading
       //record time stamp
-      newRow.setInt("minute", minute());
-      newRow.setInt("second", second());
+      newRow.setInt("millis", millis());
       //record sensor information. Customize the names so they match your sensor column names. 
       newRow.setFloat("gauge", values[0]);
       newRow.setFloat("left", values[1]);

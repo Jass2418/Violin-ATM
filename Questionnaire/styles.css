@@ -1,0 +1,119 @@
+.main-container{
+    max-width: 960px;
+    margin: auto;
+}
+
+/* Header Styles */
+
+.title-container{
+    width: 100%;
+    height: 64px;
+    background-color: dodgerblue;
+    text-align: center;
+    position: relative;
+}
+
+.title-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.title{
+    color: white;
+    font-size: 24px;
+}
+
+/* Body Styles */
+.body-container{
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgb(240,240,240);
+}
+
+/* Personal Information */
+
+.personal-info-title{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.date-label{
+    text-align: right;
+    padding-top: 4px;
+    padding-right: 12px;
+    font-size: 22px;
+}
+
+.instructions-label{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+/* Questionnaire Section */
+
+.condition-text{
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.condition-question{
+    font-weight: bold;
+}
+
+.question{
+    margin-bottom: 8px;
+}
+
+.options{
+    margin-bottom: 28px;
+}
+
+
+/* Custom Range Slider */
+
+.slider{
+    width: 100%;
+}
+
+.range-labels {
+    margin: 2px 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.range-label {
+    color: dodgerblue;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.left-text{
+    text-align: left;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.right-text{
+    text-align: right;
+}
+
+/* Submit Section */
+
+.submit-container{
+    padding: 24px;
+    text-align: center;
+}
+
+.submit-button{
+    padding-left: 32px;
+    padding-right: 32px;
+}
