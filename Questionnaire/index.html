@@ -44,26 +44,32 @@
                     For each of the questions below circle only one response.
                 </div>
             </div>
-            <!--  Questionnaire  -->
+            
+            <!--  Questionnaire Part I :: Begin -->
+            <div class="row">
+                <div class="personal-info-title">
+                    <b >Part I. History Questionnaire</b> 
+                </div>
+            </div>
             <!--  Question 1  -->
             <div class="row">
                 <div class="question">
                    1. Would you say your health in general is excellent, very good, good, fair or poor?
                 </div>
-                <div class="options">
-                    <div class="radio">
+                <div class="row options">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_1" value="1" checked>Excellent</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_1" value="2">Very good</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_1" value="3">Good</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_1" value="4">Fair</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_1" value="5">Poor</label>
                     </div>
                 </div>
@@ -73,20 +79,20 @@
                 <div class="question">
                     2. Would you say your oral health in general is excellent, very good, good, fair or poor?
                 </div>
-                <div class="options">
-                    <div class="radio">
+                <div class="row options">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_2" value="1" checked>Excellent</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_2" value="2">Very good</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_2" value="3">Good</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_2" value="4">Fair</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_2" value="5">Poor</label>
                     </div>
                 </div>
@@ -96,20 +102,19 @@
                 <div class="question">
                     3. Have you had pain in the face, jaw, temple, in front of the ear or in the ear in the past month?
                 </div>
-                <div class="options">
-                    <div class="radio">
+                <div class="row options">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_3" value="0" checked>No</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_3" value="1">Yes</label>
                     </div>
                 </div>
             </div>
-            
             <div class="condition-text">
                 [If no pain in the past month, SKIP to question 14]
             </div>
-            <!--  Question 4.A  -->
+            <!--  Question 4.a  -->
             <div class="row">
                 <div class="condition-question">
                     If Yes,
@@ -128,7 +133,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="condition-text">
                 [If one year ago or more SKIP to question 5] [If less than one year ago, code 00]            
             </div>
@@ -153,14 +157,14 @@
                 <div class="question">
                     5. Is your facial pain persistent, recurrent or was it only a one-time problem?
                 </div>
-                <div class="options">
-                    <div class="radio">
+                <div class="row options">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_5" value="1" checked>Persistent</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_5" value="2">Recurrent</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_5" value="3">One-Time</label>
                     </div>
                 </div>
@@ -170,15 +174,15 @@
                 <div class="question">
                     6. Have you ever gone to a physician, dentist, chiropractor or other health professional for facial ache or pain?
                 </div>
-                <div class="options">
-                    <div class="radio">
+                <div class="row options">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_6" value="1" checked>No</label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_6" value="2">Yes, in the last six months
                         </label>
                     </div>
-                    <div class="radio">
+                    <div class="col-sm radio">
                         <label><input type="radio" name="ans_6" value="3">Yes, more than six months ago</label>
                     </div>
                 </div>
@@ -189,7 +193,7 @@
                     7. How would you rate your facial pain on a 0 to 10 scale at the present time, that is right now, where 0 is "no pain" and 10 is "pain as bad as could be"?                </div>
                 <div class="options">
                     <div class="range">
-                        <input type="range" class="slider" id="ans_7" min="0" max="10" value="0">
+                        <label for="ans_7"></label><input type="range" class="slider" id="ans_7" min="0" max="10" value="0">
                     </div>
                     <div class="row range-labels">
                         <div class="col range-label left-text">0</div>
@@ -206,7 +210,7 @@
                 </div>
                 <div class="options">
                     <div class="range">
-                        <input type="range" class="slider" id="ans_8" min="0" max="10" value="0">
+                        <label for="ans_8"></label><input type="range" class="slider" id="ans_8" min="0" max="10" value="0">
                     </div>
                     <div class="row range-labels">
                         <div class="col range-label left-text">0</div>
@@ -224,7 +228,7 @@
                 </div>               
                 <div class="options">
                     <div class="range">
-                        <input type="range" class="slider" id="ans_9" min="0" max="10" value="0">
+                        <label for="ans_9"></label><input type="range" class="slider" id="ans_9" min="0" max="10" value="0">
                     </div>
                     <div class="row range-labels">
                         <div class="col range-label left-text">0</div>
@@ -256,7 +260,7 @@
                 </div>
                 <div class="options">
                     <div class="range">
-                        <input type="range" class="slider" id="ans_11" min="0" max="10" value="0">
+                        <label for="ans_11"></label><input type="range" class="slider" id="ans_11" min="0" max="10" value="0">
                     </div>
                     <div class="row range-labels">
                         <div class="col range-label left-text">0</div>
@@ -274,7 +278,7 @@
                 </div>
                 <div class="options">
                     <div class="range">
-                        <input type="range" class="slider" id="ans_12" min="0" max="10" value="0">
+                        <label for="ans_12"></label><input type="range" class="slider" id="ans_12" min="0" max="10" value="0">
                     </div>
                     <div class="row range-labels">
                         <div class="col range-label left-text">0</div>
@@ -291,7 +295,7 @@
                 </div>
                 <div class="options">
                     <div class="range">
-                        <input type="range" class="slider" id="ans_13" min="0" max="10" value="0">
+                        <label for="ans_13"></label><input type="range" class="slider" id="ans_13" min="0" max="10" value="0">
                     </div>
                     <div class="row range-labels">
                         <div class="col range-label left-text">0</div>
@@ -300,6 +304,1693 @@
                     </div>
                 </div>
             </div>
+            <!--  Question 14.a  -->
+            <div class="row">
+                <div class="question">
+                    14.a. Have you ever had your jaw lock or catch so that it won't open all the way?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_14a" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_14a" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 14.b  -->
+            <div class="condition-text">
+                [If no problem opening all the way, SKIP to question 15]
+            </div>
+            <div class="row">
+                <div class="question">
+                   14.b. Was this limitation in jaw opening severe enough to interfere with your ability to eat?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_14b" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_14b" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 15.a  -->
+            <div class="row">
+                <div class="question">
+                    15.a. Does your jaw click or
+                    pop when you open or close
+                    your mouth or when chewing?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15a" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15a" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 15.b  -->
+            <div class="row">
+                <div class="question">
+                    15.b. Does your jaw make a grating or grinding noise when it opens and closes or
+                    when chewing?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15b" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15b" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 15.c  -->
+            <div class="row">
+                <div class="question">
+                    15.c. Have you been told, or do you notice that you grind your teeth or clench
+                    your jaw while sleeping
+                    at night?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15c" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15c" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 15.d  -->
+            <div class="row">
+                <div class="question">
+                    15.d. During the day, do you grind your teeth or clench your jaw?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15d" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15d" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 15.e  -->
+            <div class="row">
+                <div class="question">
+                    15.e. Does your jaw ache or feel stiff when you wake up in the morning?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15e" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15e" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 15.f  -->
+            <div class="row">
+                <div class="question">
+                    15.f. Does your jaw ache or feel stiff when you wake up in the morning?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15f" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15f" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 15.g  -->
+            <div class="row">
+                <div class="question">
+                    15.g. Does your bite feel un-comfortable or unusual?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15g" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_15g" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 16.a  -->
+            <div class="row">
+                <div class="question">
+                    16.a. Do you have rheumatoid arthritis,
+                    lupus, or other systemic arthritic disease?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_16a" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_16a" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 16.b  -->
+            <div class="row">
+                <div class="question">
+                    16.b. Do you know of anyone in your family who has had any of these diseases?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_16b" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_16b" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 16.c  -->
+            <div class="row">
+                <div class="question">
+                    16.c. Have you had or do you have any swollen or painful joint(s) other than the joints close
+                    to your ears (TMJ)?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_16c" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_16c" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <div class="condition-text">
+                [If no swollen or painful joints, SKIP to question 17.a.]
+            </div>
+            <!--  Question 16.d  -->
+            <div class="row">
+                <div class="condition-question">
+                    If Yes,
+                </div>
+                <div class="question">
+                    16.d. Is this a persistent pain which you have had for at least one year?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_16d" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_16d" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 17.a  -->
+            <div class="row">
+                <div class="question">
+                    17.a. Have you had a recent injury to your face or jaw?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_17a" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_17a" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 17.b  -->
+            <div class="condition-text">
+                [If no recent injuries, SKIP to question 18]
+            </div>
+            <div class="row">
+                <div class="condition-question">
+                    If Yes,
+                </div>
+                <div class="question">
+                    17.b. Did you have jaw pain before the injury?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_17b" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_17b" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 18  -->
+            <div class="row">
+                <div class="question">
+                    18. During the last six months have you had a problem with headaches or migraines?
+                </div>
+                <div class="row options">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_18" value="0" checked>No</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_18" value="1">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 19  -->
+            <div class="row">
+                <div class="question">
+                    19. What activities does your present jaw problem prevent or limit you from doing?
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <!--  Question A  -->
+                        <div class="question">
+                            a. Chewing
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19a" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19a" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!--  Question B  -->
+                        <div class="question">
+                            b. Drinking
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19b" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19b" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!--  Question C  -->
+                        <div class="question">
+                            c. Exercising
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19c" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19c" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!--  Question D  -->
+                        <div class="question">
+                            d. Eating hard foods
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19d" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19d" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <!--  Question E  -->
+                        <div class="question">
+                            e. Eating soft foods
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19e" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19e" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!--  Question F  -->
+                        <div class="question">
+                            f. Smiling/laughing
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19f" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19f" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!--  Question G  -->
+                        <div class="question">
+                            g. Sexual activity
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19g" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19g" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!--  Question H  -->
+                        <div class="question">
+                            h. Cleaning teeth or face
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19h" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19h" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <!--  Question I  -->
+                        <div class="question">
+                            i. Yawning
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19i" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19i" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!--  Question J  -->
+                        <div class="question">
+                            j. Swallowing
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19j" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19j" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!--  Question K  -->
+                        <div class="question">
+                            k. Talking
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19k" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19k" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!--  Question L  -->
+                        <div class="question">
+                            l. Having your usual facial appearance
+                        </div>
+                        <div class="options">
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19l" value="0" checked>No</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="ans_19l" value="1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 20  -->
+            <div class="row">
+                <div class="question">
+                    20. In the last month, how much have you been distressed by. . .
+                </div>
+                <div class="row">
+                    <!-- Question A -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            a. Headaches
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20a"></label><input type="range" class="slider" id="ans_20a" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question B -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            b. Loss of sexual interest or pleasure
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20b"></label><input type="range" class="slider" id="ans_20b" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question C -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            c. Faintness or dizziness
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20c"></label><input type="range" class="slider" id="ans_20c" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question D -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            d. Pains in the heart or chest
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20d"></label><input type="range" class="slider" id="ans_20d" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question E -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            e. Feeling low in energy or slowed down
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20e"></label><input type="range" class="slider" id="ans_20e" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question F -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            f. Thoughts of death or dying
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20f"></label><input type="range" class="slider" id="ans_20f" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question G -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            g. Poor appetite
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20g"></label><input type="range" class="slider" id="ans_20g" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question H -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            h. Crying easily
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20h"></label><input type="range" class="slider" id="ans_20h" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question I -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            i. Blaming yourself for things
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20i"></label><input type="range" class="slider" id="ans_20i" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question J -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            j. Pains in the lower back
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20j"></label><input type="range" class="slider" id="ans_20j" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question K -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            k. Feeling lonely
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20k"></label><input type="range" class="slider" id="ans_20k" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question L -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            l. Feeling blue
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20l"></label><input type="range" class="slider" id="ans_20l" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question M -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            m. Worrying too much about things
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20m"></label><input type="range" class="slider" id="ans_20m" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question N -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            n. Feeling no interest in things
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20n"></label><input type="range" class="slider" id="ans_20n" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question O -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            o. Nausea or upset stomach
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20o"></label><input type="range" class="slider" id="ans_20o" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question P -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            p. Soreness of your muscles
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20p"></label><input type="range" class="slider" id="ans_20p" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question Q -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            q. Trouble falling asleep
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20q"></label><input type="range" class="slider" id="ans_20q" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question R -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            r. Trouble getting your breath
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20r"></label><input type="range" class="slider" id="ans_20r" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question S -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            s. Hot or cold spells
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20s"></label><input type="range" class="slider" id="ans_20s" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question T -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            t. Numbness or tingling in parts of your body
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20t"></label><input type="range" class="slider" id="ans_20t" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question U -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            u. A lump in your throat
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20u"></label><input type="range" class="slider" id="ans_20u" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question V -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            v. Feeling hopeless about the future
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20v"></label><input type="range" class="slider" id="ans_20v" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question W -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            w. Feeling weak in parts of your body
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20w"></label><input type="range" class="slider" id="ans_20w" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question X -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            x. Heavy feelings in your arms or legs
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20x"></label><input type="range" class="slider" id="ans_20x" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question Y -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            y. Thoughts of ending your life
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20y"></label><input type="range" class="slider" id="ans_20y" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question Z -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            z. Overeating
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20z"></label><input type="range" class="slider" id="ans_20z" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question AA -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            aa. Awakening in the early morning
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20aa"></label><input type="range" class="slider" id="ans_20aa" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question BB -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            bb. Sleep that is restless or disturbed
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20bb"></label><input type="range" class="slider" id="ans_20bb" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question CC -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            cc. Feeling everything is an effort
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20cc"></label><input type="range" class="slider" id="ans_20cc" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question DD -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            dd. Feelings of worthlessness
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20dd"></label><input type="range" class="slider" id="ans_20dd" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Question EE -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            ee. Feeling of being caught or trapped
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20ee"></label><input type="range" class="slider" id="ans_20ee" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question FF -->
+                    <div class="col-sm row">
+                        <div class="col-sm-4">
+                            ff. Feelings of guilt
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="options">
+                                <div class="range">
+                                    <label for="ans_20ff"></label><input type="range" class="slider" id="ans_20ff" min="0" max="4" value="0">
+                                </div>
+                                <div class="row range-labels">
+                                    <div class="col range-label left-text">0</div>
+                                    <div class="col range-label center-text">2</div>
+                                    <div class="col range-label right-text">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 21  -->
+            <div class="row">
+                <div class="question">
+                    21. How good a job do you feel you are doing in taking care of your health overall?
+                </div>
+                <div class="options row">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_21" value="1" checked>Excellent</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_21" value="2">Very good</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_21" value="3">Good</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_21" value="4">Fair</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_21" value="5">Poor</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 22  -->
+            <div class="row">
+                <div class="question">
+                    22. How good a job do you feel you are doing in taking care of your oral health?
+                </div>
+                <div class="options row">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_22" value="1" checked>Excellent</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_22" value="2">Very good</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_22" value="3">Good</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_22" value="4">Fair</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_22" value="5">Poor</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 23  -->
+            <div class="row">
+                <div class="question">
+                    23. When were you born?
+                </div>
+                <div class="row options">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="input-group">
+                            <input type="number" name="ans_23_day" id="ans_23_day" class="form-control" placeholder="Day" aria-label="Day" aria-describedby="23_day">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="23_day">Day</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="input-group">
+                            <input type="number" name="ans_23_months" id="ans_23_months" class="form-control" placeholder="Month" aria-label="Month" aria-describedby="23_month">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="23_month">Month</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="input-group">
+                            <input type="number" name="ans_23_year" id="ans_23_year" class="form-control" placeholder="Year" aria-label="Year" aria-describedby="23_year">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="23_year">Year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 24  -->
+            <div class="row">
+                <div class="question">
+                    24. Are you male or female?
+                </div>
+                <div class="options row">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_24" value="1" checked>Male</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_24" value="2">Female</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 25  -->
+            <div class="row">
+                <div class="question">
+                    25. Which of the following groups best represent your race?
+                </div>
+                <div class="options row">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_25" value="1" checked>Aleut, Eskimo or American Indian</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_25" value="2">Asian or Pacific Islander</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_25" value="3">Black</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_25" value="4">White</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_25" value="5">Other</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 26  -->
+            <div class="row">
+                <div class="question">
+                    26. Are any of these groups your national origin or ancestry?
+                </div>
+                <div class="options">
+                    <div class="row">
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_26" value="3" checked>Mexican/Mexicano</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_26" value="1" >Puerto Rican</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_26" value="2">Cuban</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_26" value="4">Mexican American</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_26" value="5">Chicano</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_26" value="6">Other Latin American</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_26" value="7">Other Spanish</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_26" value="8">None of the above</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 28  -->
+            <div class="row">
+                <div class="question">
+                    28. During the past 2 weeks, did you work at a job or business not counting work around the house (include unpaid work in the family farm/business)?                </div>
+                <div class="options row">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_28" value="1" checked>Yes</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_28" value="2">No</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 29  -->
+            <div class="row">
+                <div class="question">
+                    29. Are you married, widowed, divorced, separated or never been married?
+                </div>
+                <div class="options row">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_29" value="1" checked>Married-spouse in household</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_29" value="2">Married-spouse not in household</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_29" value="3">Widowed</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_29" value="4">Divorced</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_29" value="5">Separated</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_29" value="6">Never Married</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 30  -->
+            <div class="row">
+                <div class="question">
+                    30. Which of the following best represents your total combined household income during the past 12 months?
+                </div>
+                <div class="options row">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_30" value="1" checked>$0-$14,999</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_30" value="2">$15,000-$24,999</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_30" value="3">$25,000-$34,999</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_30" value="4">$35,000-$49,999</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_30" value="5">$50,000 or more</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 31  -->
+            <div class="row">
+                <div class="question">
+                    31. What is your USA 5 digit zip code or your International Area Code?
+                </div>
+                <div class="options row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="input-group">
+                            <input type="number" name="ans_31_zip" id="ans_31_zip" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="31_zip">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="31_zip">Zip Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Questionnaire Part I :: End -->
+            
+            <!--  Questionnaire Part II :: Start -->
+            <div class="row">
+                <div class="personal-info-title">
+                    <b >Part II. Research Diagnostic Criteria TMD Clinical Examination Form</b>
+                </div>
+            </div>
+            <!--  Question 1  -->
+            <div class="row">
+                <div class="question">
+                    1. Do you have pain on the right side
+                    of your face, the left side or both sides?
+                </div>
+                <div class="options row">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_1" value="0" checked>None</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_1" value="1">Right</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_1" value="2">Left</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_1" value="3">Both</label>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 2  -->
+            <div class="row">
+                <div class="question">
+                    2. Could you point to the areas where you feel pain?
+                </div>
+                <div class="options">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="text-bold">
+                                Right
+                            </div>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_2r" value="0" checked>None</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_2r" value="1">Jaw Joint</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_2r" value="2">Muscles</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_2r" value="3">Both</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="text-bold">
+                                Left
+                            </div>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_2l" value="0" checked>None</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_2l" value="1">Jaw Joint</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_2l" value="2">Muscles</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_2l" value="3">Both</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="condition-text">
+                [Examiner feels area subject points to, if
+                it is unclear whether it is joint or muscle pain]
+            </div>
+            <!--  Question 3  -->
+            <div class="row">
+                <div class="question">
+                    3. Opening Pattern
+                </div>
+                <div class="options row">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_3" value="0" checked>Straight</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_3" value="1">Right Lateral Deviation (uncorrected)</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_3" value="2">Right Corrected ("S") Deviation</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_3" value="3">Left Lateral Deviation (uncorrected)</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_3" value="4">Left Corrected ("S") Deviation</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_3" value="5">Other</label>
+                    </div>
+
+                </div>
+            </div>
+            <!--  Question 4 -->
+            <div class="row">
+                <div class="question">
+                    4. Vertical Range of Motion
+                </div>
+                <div class="options row">
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_4" value="8" checked>Maxillary incisor used</label>
+                    </div>
+                    <div class="col-sm radio">
+                        <label><input type="radio" name="ans_2_4" value="9">Other</label>
+                    </div>
+                </div>
+                <!-- Question A -->
+                <div class="row options">
+                    <div class="col-sm-4 question-with-input">
+                        a. Unassisted opening without pain
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <div class="input-group">
+                            <input type="number" name="ans_2_4a" id="ans_2_4a" class="form-control" placeholder="" aria-label="mm" aria-describedby="ans_2_4a">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="ans_2_4amm">mm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question B -->
+                <div class="row">
+                    <div class="col-sm-4 question-with-input">
+                        b. Maximum unassisted opening
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-2">
+                            <div class="input-group">
+                                <input type="number" name="ans_2_4b" id="ans_2_4b" class="form-control" placeholder="" aria-label="mm" aria-describedby="ans_2_4b">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="ans_2_4bmm">mm</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row options">
+                    <div class="col-6 col-sm-6 col-md-6">
+                        <div class="text-center little-font"> Muscle Pain </div>
+                        <div class="row">
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4bm" value="0" checked>None</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4bm" value="1">Right</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4bm" value="2">Left</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4bm" value="3">Both</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 ">
+                        <div class="text-center little-font"> Joint Pain </div>
+                        <div class="row">
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4bj" value="0" checked>None</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4bj" value="1">Right</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4bj" value="2">Left</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4bj" value="3">Both</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Question C -->
+                <div class="row ">
+                    <div class="col-sm-4 question-with-input">
+                        c. Maximum assisted opening
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <div class="input-group">
+                            <input type="number" name="ans_2_4c" id="ans_2_4c" class="form-control" placeholder="" aria-label="mm" aria-describedby="ans_2_4c">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="ans_2_4cmm">mm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row options">
+                    <div class="col-3 col-sm-6 col-md-6">
+                        <div class="text-center little-font"> Muscle Pain </div>
+                        <div class="row">
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4cm" value="0" checked>None</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4cm" value="1">Right</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4cm" value="2">Left</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4cm" value="3">Both</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-6 col-md-6">
+                        <div class="text-center little-font"> Joint Pain </div>
+                        <div class="row">
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4cj" value="0" checked>None</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4cj" value="1">Right</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4cj" value="2">Left</label>
+                            </div>
+                            <div class="col-sm radio">
+                                <label><input type="radio" name="ans_2_4cj" value="3">Both</label>
+                            </div>
+                        </div>
+
+                    </div>   
+                </div>
+                <!-- Question D -->
+                <div class="row options">
+                    <div class="col-sm-4 question-with-input">
+                        d. Vertical incisal overlap
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <div class="input-group">
+                            <input type="number" name="ans_2_4d" id="ans_2_4d" class="form-control" placeholder="" aria-label="mm" aria-describedby="ans_2_4d">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="ans_2_4dmm">mm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Question 5  -->
+            <div class="row">
+                <div class="question">
+                    5. Joint Sounds (palpation)
+                </div>
+                <!--  Question A  -->
+                <div class="question">
+                    a. Opening
+                </div>
+                <div class="options">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="text-bold">
+                                Right
+                            </div>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5ar" value="0" checked>None</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5ar" value="1">Click</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5ar" value="2">Coarse Crepitus</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5ar" value="3">Fine Crepitus</label>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-5">
+                            <div class="input-group">
+                                <input type="number" name="ans_2_5ar_mm" id="ans_2_5ar_mm" class="form-control" placeholder="Measurement of Opening Click" aria-label="Measurement of Opening Click" aria-describedby="ans_2_5l_mm">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="ans_2_5armm">mm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="text-bold">
+                                Left
+                            </div>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5al" value="0" checked>None</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5al" value="1">Click</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5al" value="2">Coarse Crepitus</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5al" value="3">Fine Crepitus</label>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-5">
+                            <div class="input-group">
+                                <input type="number" name="ans_2_5al_mm" id="ans_2_5al_mm" class="form-control" placeholder="Measurement of Opening Click" aria-label="Measurement of Opening Click" aria-describedby="ans_2_5r_mm">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="ans_2_5almm">mm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  Question B  -->
+                <div class="question">
+                    b. Closing
+                </div>
+                <div class="options">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="text-bold">
+                                Right
+                            </div>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5br" value="0" checked>None</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5br" value="1">Click</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5br" value="2">Coarse Crepitus</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5br" value="3">Fine Crepitus</label>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-5">
+                            <div class="input-group">
+                                <input type="number" name="ans_2_5br_mm" id="ans_2_5br_mm" class="form-control" placeholder="Measurement of Closing Click" aria-label="Measurement of Closing Click" aria-describedby="ans_2_5l_mm">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="ans_2_5brmm">mm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="text-bold">
+                                Left
+                            </div>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5bl" value="0" checked>None</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5bl" value="1">Click</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5bl" value="2">Coarse Crepitus</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5bl" value="3">Fine Crepitus</label>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-5">
+                            <div class="input-group">
+                                <input type="number" name="ans_2_5bl_mm" id="ans_2_5bl_mm" class="form-control" placeholder="Measurement of Closing Click" aria-label="Measurement of Closing Click" aria-describedby="ans_2_5r_mm">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="ans_2_5blmm">mm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  Question C  -->
+                <div class="question">
+                    c. Reciprocal click eliminated on protrusive opening
+                </div>
+                <div class="options">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="text-bold">
+                                Right
+                            </div>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5cr" value="0" checked>No</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5cr" value="1">Yes</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5cr" value="8">N/A</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="text-bold">
+                                Left
+                            </div>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5cl" value="0" checked>No</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5cl" value="1">Yes</label>
+                        </div>
+                        <div class="col-sm radio">
+                            <label><input type="radio" name="ans_2_5cl" value="8">N/A</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Questionnaire Part II :: End -->
+            
             <!--  Submit Button  -->
             <div class="submit-container">
                 <button type="submit" class="submit-button btn btn-primary">Submit</button>
